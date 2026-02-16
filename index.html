@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subway Surfers: Zero-G</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- Load Three.js as a global script (UMD) for file:// compatibility -->
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <!-- Placeholder for Cannon.js if needed later -->
+</head>
+
+<body>
+  <div id="uicontainer">
+    <div id="main-menu">
+      <h1>Prompt Wars<br><span>Subway Surf</span></h1>
+      <p>ARROWS to Move/Jump | Q/E to ROTATE WORLD</p>
+
+      <div class="menu-group">
+        <label for="theme-select">Select Environment</label>
+        <select id="theme-select">
+          <option value="google">Google Surf (Default)</option>
+          <option value="cyberpunk">Neon City</option>
+          <option value="mars">Mars Colony</option>
+          <option value="ocean">Deep Ocean</option>
+        </select>
+      </div>
+
+
+
+
+
+      <button id="start-btn">START RUN</button>
+    </div>
+    <div id="hud" style="display: none;">
+      <div id="score-panel" class="hud-panel">
+        <span class="label">Score</span>
+        <span id="score-val" class="value">0000</span>
+      </div>
+      <div id="speed-panel" class="hud-panel">
+        <span class="label">Gravity</span>
+        <span id="speed-val" class="value">STABLE</span>
+      </div>
+    </div>
+    <div id="game-over" style="display: none;">
+      <h2>WIPEOUT</h2>
+      <p>SCORE: <span id="final-score">0</span></p>
+      <button id="restart-btn">RETRY</button>
+    </div>
+  </div>
+  <div id="canvas-container"></div>
+  <script src="./Gemini.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+# OS generated files
+.DS_Store
+.Thumb.db
+Thumbs.db
+
+# Gemini/Agent files
+.gemini/
+.agent/
+.system_generated/
+*.log
+
+# Node (if ever added)
+node_modules/
+dist/
